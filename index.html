@@ -5,29 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WebRTC Stream Viewer</title>
-  <link rel="stylesheet" type="text/css" href="css/resize.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
 <body>
+  <h1><i>WebRTC Stream Viewer</i></h1>
   <button id="startButton" disabled>Start</button>
-  <i>Reload page to reset</i>
+  <button id="stopButton" disabled>Stop</button>
   <br/>
   <br/>
+
   <div id="container">
-    <video id="gum-local" autoplay playsinline muted controls></video>
+    <video id="video-container" autoplay playsinline muted></video>
     <div id="resizable-handle"></div>
-    <fieldset id="options" style="display:none">
+  </div>
+
+  <div id="options-container">
+    <fieldset id="options">
       <legend>Advanced options</legend>
       <select id="displaySurface">
         <option value="default" selected>Show default sharing options</option>
-        <!-- <option value="browser">Prefer to share a browser tab</option> -->
+        <option value="browser">Prefer to share a browser tab</option>
         <option value="window">Prefer to share a window</option>
         <option value="monitor">Prefer to share an entire screen</option>
       </select>
     </fieldset>
-    
   </div>
   <div id="msgBox"></div>
+
   <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
   <script src="lib/capture-screen.js"></script>
   <script src="lib/resize.js"></script>

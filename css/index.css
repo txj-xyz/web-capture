@@ -1,0 +1,34 @@
+body {
+    user-select: none;
+    font-family: 'Roboto', sans-serif;
+    background-color: gray;
+}
+
+#container {
+    position: relative;
+    width: 75%; /* Set an initial width */
+    height: auto;
+    overflow: hidden;
+}
+
+#options-container {
+    width: fit-content;
+}
+
+#video-container {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+    pointer-events: none;
+}
+
+#resizable-handle {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: se-resize;
+}
