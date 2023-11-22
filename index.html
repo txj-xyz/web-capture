@@ -10,12 +10,6 @@
 
 <body>
   <h1><i>WebRTC Stream Viewer</i></h1>
-  <button id="startButton" disabled>Start</button>
-  <button id="stopButton" disabled>Stop</button>
-  <button id="changeSourceButton" disabled>Change Device/Window</button>
-  <br/>
-  <br/>
-
   <div id="container">
     <video id="video-container" autoplay playsinline muted></video>
     <div id="resizable-handle"></div>
@@ -24,13 +18,19 @@
   <div id="options-container">
     <fieldset id="options">
       <legend>Advanced options</legend>
+      <button id="startButton" disabled>Start</button>
+      <button id="stopButton" disabled>Stop</button>
+      <button id="fullscreenButton" disabled>Fullscreen</button><br><br>
       <select id="displaySurface">
         <option value="default" selected>Show default sharing options</option>
         <option value="browser">Prefer to share a browser tab</option>
         <option value="window">Prefer to share a window</option>
         <option value="monitor">Prefer to share an entire screen</option>
       </select>
-      <button id="fullscreenButton" disabled>Fullscreen</button>
+      <br>
+      <br>
+      <button id="changeSourceButton" disabled>Change Device/Window</button>
+      
     </fieldset>
   </div>
   <div id="msgBox"></div>
