@@ -1,2 +1,5 @@
-# `web-capture` Web Capture Project
-Testing web application use of WebRTC integrations and weird front end stuff I personally hate.
+# `web-capture`
+WebRTC implementation of capturing media via Screen / Window / Application / Webcam
+
+## Demo
+An example demo can be found [here](https://txj-xyz.github.io/web-capture/)
